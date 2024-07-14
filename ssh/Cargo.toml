@@ -1,0 +1,17 @@
+[package]
+name = "ssh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rsa = {workspace=true}
+pem = {workspace=true}
+sshkeys = {workspace=true}
+rand = {workspace=true}
+
+[lib]
+crate-type = ["lib"]
+name = "ssh_manager"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
